@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-/* コピペ用コード */
-/* フォントサイズ */
+/* ============================
+* フォント、背景
+* ========================= */
 :root {
   /* 10px */
   --font-10: 0.625rem;
@@ -33,7 +34,7 @@
   --text-1: 0.9rem;
 
   /* 文字カラー */
-  --font-black: #000;
+  --font-black: #333;
   --font-white: #fff;
 
   /* ラインカラー */
@@ -51,15 +52,16 @@
 }
 
 /* メディアクエリ */
-/* @media screen and (max-width: 768px) {
+/* @media screen and (max-width: 900px) {
 } */
 
-/* 共通 */
+/* ============================
+* 共通
+* ========================= */
 body {
   color: var(--font-black);
   font-style: normal;
-  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -80,10 +82,137 @@ img {
   height: auto;
 }
 
-.txt-center {
+.hidden {
+  display: none;
+}
+
+/* more-link */
+.more-link {
+  display: block;
+  color: var(--font-black);
+  font-size: var(--font-14);
+  line-height: 1.5;
   text-align: center;
 }
 
+/* ============================
+* セクション幅
+* ========================= */
+.inner {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
 
-/* セクションタイトル */
+/* ============================
+* header
+* ========================= */
+.header__inner {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* ハンバーガメニュー */
+.header__nav {
+  display: none;
+}
+
+.header__nav.active {
+  display: block;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer
+}
+
+.header__menu-line {
+  position: absolute;
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 平時の位置 */
+.header__menu-line:nth-of-type(1) {
+  top: 10px;
+}
+
+.header__menu-line:nth-of-type(2) {
+  bottom: 10px;
+}
+
+/* クリック時に横アイコンが斜めになる */
+.header__menu.active-line:nth-of-type(1) {
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.header__menu.active-line:nth-of-type(2) {
+  transform: translateY(-4px) rotate(45deg);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ============================
+* main
+* ========================= */
+.sec__inner {
+  margin-bottom: 121px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40.5px 34px;
+  margin-bottom: 40px;
+}
+
+.products__link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--font-black);
+  font-size: var(--font-12);
+}
+
+.products__title,
+.products__price {
+  display: block;
+  line-height: 1.5;
+}
+
+/* ============================
+* footer
+* ========================= */
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 30px;
+  color: var(--font-black);
+}
+
+.footer__link {
+  color: var(--font-black);
+  font-size: var(--font-12);
+}
+
+.footer__copyright {
+  font-size: var(--font-10);
+}

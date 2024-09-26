@@ -3,13 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="シンプルで質の良い、どんなお部屋にも合う家具を用意しています。">
+  <meta name="description" content="シンプルで質の良い、どんなお部屋にも合う家具の店">
   <title>Furniture Design</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
 </head>
-<body>
 
+<body>
+  <header class="header">
+    <div class="header__inner inner">
+      <!-- header__logo -->
+      <h1 class="header__logo">
+        <a href="" class="header__link">
+          <img src="./img/logo.svg" width="180" height="21" alt="シンプルで質の良い、どんなお部屋にも合う家具の店" class="header__logo-img">
+        </a>
+      </h1>
+      <!-- header__menu -->
+      <div class="header__menu">
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+
+        <nav class="header__nav acvtive">
+          <ul>
+            <li>Product</li>
+            <li>About</li>
+            <li>Company</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div><!-- /.header__menu -->
+    </div><!-- /.header__inner -->
+  </header>
+
+  <main class="main">
+    <section class="sec">
+      <div class="sec__inner inner">
+        <h2 class="hidden">ピックアップ</h2>
+        <ul class="products__list sec__list">
+          <li class="prodcut__item item1">
+            <a href="" class="products__link">
+              <img src="./img/item1.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item2">
+            <a href="" class="products__link">
+              <img src="./img/item2.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item3">
+            <a href="" class="products__link">
+              <img src="./img/item3.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item4">
+            <a href="" class="products__link">
+              <img src="./img/item4.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item5">
+            <a href="" class="products__link">
+              <img src="./img/item5.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item ite61">
+            <a href="" class="products__link">
+              <img src="./img/item6.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item7">
+            <a href="" class="products__link">
+              <img src="./img/item7.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item8">
+            <a href="" class="products__link">
+              <img src="./img/item8.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="./products.html" class="sec__link more-link">View More</a>
+      </div><!-- /.sec__inner -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <!-- footer__social-list -->
+      <ul class="footer__social-list">
+        <li class="social-list__item"><a href="" class="social__link footer__link">Instagram</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Twitter</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Facebook</a></li>
+      </ul>
+      <small class="footer__copyright">&copy; Furniture Design</small>
+    </div><!-- /.footer__inner -->
+  </footer>
+
+  <script>
+    /*-------------------------------------------
+  // 1 ハンバーガーメニューがクリックされると全画面の色が変わる
+  // 2 ハンバーガーメニューがクリックされるとメニューアイコンの形状変更
+  // 3 ハンバーガーメニューがクリックされるとメニューバーが白色に変更
+  -------------------------------------------*/
+    const hamburgerMenu = document.querySelector(".header__menu"); //定数menuに.header__menuセレクタを代入
+    const body = document.querySelector("body"); //定数bodyにbodyを代入
+    const menuSpan = document.querySelectorAll(".header__menu-line");
+
+    /*
+    ハンバーガーメニューがクリックされたら
+    定数hamburgerMenuにactiveセレクタを代入
+    定数bodyにoverlay セレクタを代入
+    */
+    hamburgerMenu.addEventListener("click", () => {
+      hamburgerMenu.classList.toggle("active"); // メニューアイコンの形状変更
+      body.classList.toggle("overlay"); //背景色変更
+
+      /* spanは複数あるためforEachを使用し、span要素の集合に対して繰り返し処理を行う */
+      menuSpan.forEach(span => {
+
+        /*
+        メニューがクリックされclassListが追加されたら
+        #fff (true)、削除されたら#333(false)
+        メニューバーの色を切り替える
+
+        classList.containsメソッドは引数として与えられた要素(active)が含まれているかどうかチェック
+        含まれているなら#fff色に、含まれていないなら#333色に
+        */
+        span.style.backgroundColor = hamburgerMenu.classList.contains("active") ? "#fff" : "#333333";
+      });
+    });
+
+  </script>
 </body>
 </html>
