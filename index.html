@@ -20,16 +20,16 @@
         </a>
       </h1>
       <!-- header__menu -->
-      <div class="header__menu">
+      <div class="header__menu-btn">
         <span class="header__menu-line"></span>
         <span class="header__menu-line"></span>
 
-        <nav class="header__nav acvtive">
-          <ul>
-            <li>Product</li>
-            <li>About</li>
-            <li>Company</li>
-            <li>Contact</li>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Products</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">About</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Company</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Contact</a></li>
           </ul>
         </nav>
       </div><!-- /.header__menu -->
@@ -132,39 +132,9 @@
   </footer>
 
   <script>
-    /*-------------------------------------------
-  // 1 ハンバーガーメニューがクリックされると全画面の色が変わる
-  // 2 ハンバーガーメニューがクリックされるとメニューアイコンの形状変更
-  // 3 ハンバーガーメニューがクリックされるとメニューバーが白色に変更
-  -------------------------------------------*/
-    const hamburgerMenu = document.querySelector(".header__menu"); //定数menuに.header__menuセレクタを代入
-    const body = document.querySelector("body"); //定数bodyにbodyを代入
-    const menuSpan = document.querySelectorAll(".header__menu-line");
-
-    /*
-    ハンバーガーメニューがクリックされたら
-    定数hamburgerMenuにactiveセレクタを代入
-    定数bodyにoverlay セレクタを代入
-    */
-    hamburgerMenu.addEventListener("click", () => {
-      hamburgerMenu.classList.toggle("active"); // メニューアイコンの形状変更
-      body.classList.toggle("overlay"); //背景色変更
-
-      /* spanは複数あるためforEachを使用し、span要素の集合に対して繰り返し処理を行う */
-      menuSpan.forEach(span => {
-
-        /*
-        メニューがクリックされclassListが追加されたら
-        #fff (true)、削除されたら#333(false)
-        メニューバーの色を切り替える
-
-        classList.containsメソッドは引数として与えられた要素(active)が含まれているかどうかチェック
-        含まれているなら#fff色に、含まれていないなら#333色に
-        */
-        span.style.backgroundColor = hamburgerMenu.classList.contains("active") ? "#fff" : "#333333";
-      });
+    document.querySelector('.header__menu-btn').addEventListener('click', function () {
+      document.body.classList.toggle('menu-open');
     });
-
   </script>
 </body>
 </html>
