@@ -260,6 +260,7 @@ img {
 .footer__link {
   color: var(--font-black);
   font-size: var(--font-12);
+  text-transform: uppercase;
 }
 
 .footer__copyright {
