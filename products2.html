@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="シンプルで質の良い、どんなお部屋にも合う家具の店">
+  <title>Furniture Design</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner inner">
+      <!-- header__logo -->
+      <h1 class="header__logo">
+        <a href="" class="header__link">
+          <img src="./img/logo.svg" width="180" height="21" alt="シンプルで質の良い、どんなお部屋にも合う家具の店" class="header__logo-img">
+        </a>
+      </h1>
+      <!-- header__menu -->
+      <div class="header__menu-btn">
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Products</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">About</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Company</a></li>
+            <li class="header__menu-itm"><a href="" class="header__menu-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.header__menu -->
+    </div><!-- /.header__inner -->
+  </header>
+
+  <main class="main">
+    <section class="sec">
+      <div class="sec__inner inner">
+        <h2 class="sec__title">Products</h2>
+        <ul class="products__list sec__list">
+          <li class="prodcut__item item13">
+            <a href="" class="products__link">
+              <img src="./img/item13.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item14">
+            <a href="" class="products__link">
+              <img src="./img/item14.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item15">
+            <a href="" class="products__link">
+              <img src="./img/item15.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+          <li class="prodcut__item item16">
+            <a href="" class="products__link">
+              <img src="./img/item16.jpg" width="294.5" height="294.5" alt="" class="products__img">
+              <div class="products__txt">
+                <span class="products__title">プロダクトタイトルプロダクトタイトル</span>
+                <span class="products__price">&yen;99,999 +tax</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- ページリンク -->
+        <ul class="sec__link-list">
+          <li class="sec__link-item"><a href="./products.html" class="sec__link page-link">1</a></li>
+          <li class="sec__link-item"><a href="./products2.html" class="sec__link page-link">2</a></li>
+        </ul>
+      </div><!-- /.sec__inner -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <!-- footer__social-list -->
+      <ul class="footer__social-list">
+        <li class="social-list__item"><a href="" class="social__link footer__link">Instagram</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Twitter</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Facebook</a></li>
+      </ul>
+      <small class="footer__copyright">&copy; Furniture Design</small>
+    </div><!-- /.footer__inner -->
+  </footer>
+
+  <!-- ハンバーガーメニュー -->
+  <script>
+    document.querySelector('.header__menu-btn').addEventListener('click', function () {
+      document.body.classList.toggle('menu-open');
+    });
+  </script>
+</body>
+</html>
