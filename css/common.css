@@ -43,7 +43,7 @@
 
   /* 背景色 */
   --bg-main: #e6e2d7;
-  --bg-footer: #f7f7f7;
+  --bg-white: #fff;
   --bg-yellow: rgba(249, 233, 6, .6);
   --bg-red: rgba(149, 42, 38, .6);
 
@@ -63,6 +63,8 @@ body {
   font-style: normal;
   font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-optical-sizing: auto;
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -109,7 +111,8 @@ img {
 .sec__title {
   font-size: var(--font-14);
   line-height: 1.5;
-  margin: 40px 0 30px;
+  padding-top: 120px;
+  margin-bottom: 30px;
 }
 
 /* ページリンク */
@@ -122,6 +125,13 @@ img {
 /* ============================
 * header
 * ========================= */
+.header {
+  position: fixed;
+  background: var(--bg-white);
+  width: 100%;
+  top: 0;
+}
+
 .header__inner {
   height: 80px;
   display: flex;
@@ -244,11 +254,17 @@ img {
 /* ============================
 * footer
 * ========================= */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
 .footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 .footer__social-list {
