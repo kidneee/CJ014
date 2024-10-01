@@ -87,7 +87,8 @@ img {
 }
 
 /* more-link */
-.more-link {
+.more-link,
+.page-link {
   display: block;
   color: var(--font-black);
   font-size: var(--font-14);
@@ -96,12 +97,26 @@ img {
 }
 
 /* ============================
-* セクション幅
+* セクション
 * ========================= */
 .inner {
   max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+/* セクションタイトル */
+.sec__title {
+  font-size: var(--font-14);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* ページリンク */
+.sec__link-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* ============================
