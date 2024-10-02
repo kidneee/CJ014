@@ -67,6 +67,12 @@ body {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    padding-bottom: 160px;
+  }
+}
+
 a {
   display: block;
   cursor: pointer;
@@ -105,6 +111,12 @@ img {
   max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .inner {
+    max-width: 900px;
+  }
 }
 
 /* セクションタイトル */
@@ -232,11 +244,24 @@ img {
   margin-bottom: 121px;
 }
 
+@media screen and (max-width: 900px) {
+  .sec__inner {
+    margin-bottom: 0;
+  }
+}
+
 .products__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40.5px 34px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .products__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 19px;
+  }
 }
 
 .products__link {
@@ -245,6 +270,12 @@ img {
   gap: 10px;
   color: var(--font-black);
   font-size: var(--font-12);
+}
+
+@media screen and (max-width: 900px) {
+  .products__img {
+    width: 100%;
+  }
 }
 
 .products__title,
@@ -263,10 +294,22 @@ img {
   right: 0;
 }
 
+@media screen and (max-width: 900px) {
+  .footer {
+    bottom: 0;
+  }
+}
+
 .footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__inner {
+    flex-direction: column;
+  }
 }
 
 .footer__social-list {

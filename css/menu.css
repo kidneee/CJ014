@@ -91,6 +91,13 @@
   padding: 20px 10px;
 }
 
+@media screen and (max-width: 900px) {
+  .company__item {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 .company__item:not(:last-of-type) {
   border-bottom: 1px solid var(--line-gray);
 }
@@ -103,11 +110,16 @@
   width: 68%;
 }
 
+@media screen and (max-width: 900px) {
+  .company__item .item__desc {
+    width: 100%;
+  }
+}
+
 .company__map iframe {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
   filter: grayscale(100%);
   position: relative;
   z-index: -10;
