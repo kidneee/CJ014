@@ -190,12 +190,14 @@ img {
 
 .menu-open .header__menu-list {
   transform: translateX(50px);
-  transition: transform 0.8s ease;
+  transition: transform 0.5s ease;
 }
 
 /* メニューのスタイル */
 .header__menu {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
 }
 
 .header__menu-list {
