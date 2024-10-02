@@ -1,1 +1,93 @@
 @charset "UTF-8";
+
+/* ============================
+* フォント、背景
+* ========================= */
+:root {
+  /* 10px */
+  --font-10: 0.625rem;
+  /* 12px */
+  --font-12: 0.75rem;
+  /* 13px */
+  --font-13: 0.8125rem;
+  /* 14px */
+  --font-14: 0.875rem;
+  /* 16px */
+  --font-16: 1rem;
+  /* 18px */
+  --font-18: 1.125rem;
+  /* 20px */
+  --font-20: 1.25rem;
+  /* 24px */
+  --font-24: 1.5rem;
+  /* 28px */
+  --font-28: 1.75rem;
+  /* 32px */
+  --font-32: 2rem;
+  /* 36px */
+  --font-36: 2.25rem;
+  /* 2.5px */
+  --font-40: 2.25rem;
+  /* 72px */
+  --font-72: 4.5rem;
+  /* 14.4px */
+  --text-1: 0.9rem;
+
+  /* 行間 */
+  --lh-normal: 1.5;
+
+  /* 文字カラー */
+  --font-black: #333;
+  --font-white: #fff;
+
+  /* ラインカラー */
+  --line-black: #000;
+  --line-white: #fff;
+
+  /* 背景色 */
+  --bg-main: #e6e2d7;
+  --bg-white: #fff;
+  --bg-yellow: rgba(249, 233, 6, .6);
+  --bg-red: rgba(149, 42, 38, .6);
+
+  /* ボタンカラー */
+  --btn-color: #4b4b4b;
+}
+
+/* ============================
+* コンテンツ
+* ========================= */
+.product-content__wrapper {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 50% 42%;
+  gap: 8%;
+
+}
+
+/* 右側 */
+.product__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.product__right--top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: var(--font-14);
+  line-height: var(--lh-normal);
+}
+
+/* リスト */
+.product .list__item {
+  display: flex;
+  gap: 14px;
+}
+
+.product .item__term {
+  width: 26%;
+  text-transform: uppercase;
+}

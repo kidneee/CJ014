@@ -38,36 +38,39 @@
   </header>
 
   <main class="main">
-    <section class="product-dtl sec">
-      <div class="product-dtl__inner sec__inner inner">
+    <section class="product sec">
+      <div class="product__inner sec__inner inner">
         <h2 class="sec__title">プロダクトタイトル</h2>
-        <div class="flex">
-          <img src="./img/item1.jpg" width="400" height="400" alt="" class="product-dtl__img">
-          <div class="product-dtl__right">
-            <p class="product-detail__desc">
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-            <p class="product-dtl__desc">
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-            <span class="product-dtl__price">&yen;99,999 +tax</span>
-            <dl>
-              <div>
-                <dt>Size:</dt>
-                <dd>W999 × D999 × H999</dd>
-              </div>
-              <div>
-                <dt>Color:</dt>
-                <dd>テキスト</dd>
-              </div>
-              <div>
-                <dt>Material:</dt>
-                <dd>テキストテキストテキスト</dd>
-              </div>
-            </dl>
-          </div>
-          <a href="./products.html" class="sec__link more-link">Back To Products</a>
-        </div>
+        <div class="product-content__wrapper">
+          <img src="./img/item1.jpg" width="400" height="400" alt="" class="product__img">
+          <div class="product__right">
+            <div class="product__right--top">
+              <p class="product__desc">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <p class="product__desc">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <span class="product__price">&yen;99,999 +tax</span>
+              <dl class="product__list">
+                <div class="list__item">
+                  <dt class="item__term">Size：</dt>
+                  <dd class="item__def">W999 × D999 × H999</dd>
+                </div>
+                <div class="list__item">
+                  <dt class="item__term">Color：</dt>
+                  <dd class="item__def">テキスト</dd>
+                </div>
+                <div class="list__item">
+                  <dt class="item__term">Material：</dt>
+                  <dd class="item__def">テキストテキストテキスト</dd>
+                </div>
+              </dl>
+            </div><!-- /.product__right--top -->
+            <a href="./products.html" class="sec__link more-link">Back To Products</a>
+          </div><!-- /.product__right -->
+        </div><!-- /.product-content__wrapper -->
+
       </div><!-- /.sec__inner -->
     </section>
   </main>
