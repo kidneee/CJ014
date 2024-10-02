@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="シンプルで質の良い、どんなお部屋にも合う家具の店">
+  <title>Company | Furniture Design</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner inner">
+      <!-- header__logo -->
+      <h1 class="header__logo">
+        <a href="./index.html" class="header__link">
+          <img src="./img/logo.svg" width="180" height="21" alt="シンプルで質の良い、どんなお部屋にも合う家具の店" class="header__logo-img">
+        </a>
+      </h1>
+      <!-- header__menu -->
+      <div class="header__menu-btn">
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-itm"><a href="./products.html" class="header__menu-link">Products</a></li>
+            <li class="header__menu-itm"><a href="./about.html" class="header__menu-link">About</a></li>
+            <li class="header__menu-itm"><a href="./company.html" class="header__menu-link">Company</a></li>
+            <li class="header__menu-itm"><a href="mailto:xxxxx@xxx.xxx?subject=お問い合わせ" class="header__menu-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.header__menu -->
+    </div><!-- /.header__inner -->
+  </header>
+
+  <main class="main">
+    <section class="company menu sec">
+      <div class="company__inner inner">
+        <h2 class="sec__title">Company</h2>
+        <div class="sec__content-wrapper">
+          <dl class="company__list">
+            <div class="company__item">
+              <dt class="item__term">社名</dt>
+              <dd class="item__desc">株式会社ファニチャーデザイン</dd>
+            </div>
+            <div class="company__item">
+              <dt class="item__term">住所</dt>
+              <dd class="item__desc">〒107-0062 東京都港区南青山１丁目××××××</dd>
+            </div>
+            <div class="company__item">
+              <dt class="item__term">設立</dt>
+              <dd class="item__desc">XXXX年XX月</dd>
+            </div>
+            <div class="company__item">
+              <dt class="item__term">資本金</dt>
+              <dd class="item__desc">XXXX万円</dd>
+            </div>
+            <div class="company__item">
+              <dt class="item__term">従業員数</dt>
+              <dd class="item__desc">XX名</dd>
+            </div>
+            <div class="company__item">
+              <dt class="item__term">事業内容</dt>
+              <dd class="item__desc">
+                <ul>
+                  <li>家具、インテリアの企画・生産</li>
+                  <li>家具、インテリアの販売</li>
+                  <li>店舗の企画・デザイン・設計</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+          <div class="company__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.583237668664!2d139.72046549445767!3d35.66982084036329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c820ac932eb%3A0xc68079dd10afd971!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1727832047337!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div><!-- /.sec__content-wrapper -->
+      </div><!-- /.sec__inner -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <!-- footer__social-list -->
+      <ul class="footer__social-list">
+        <li class="social-list__item"><a href="" class="social__link footer__link">Instagram</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Twitter</a></li>
+        <li class="social-list__item"><a href="" class="social__link footer__link">Facebook</a></li>
+      </ul>
+      <small class="footer__copyright">&copy; Furniture Design</small>
+    </div><!-- /.footer__inner -->
+  </footer>
+
+  <!-- ハンバーガーメニュー -->
+  <script>
+    document.querySelector('.header__menu-btn').addEventListener('click', function () {
+      document.body.classList.toggle('menu-open');
+    });
+  </script>
+</body>
+</html>
