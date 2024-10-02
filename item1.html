@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/detail.css">
 </head>
 
 <body>
@@ -37,11 +38,36 @@
   </header>
 
   <main class="main">
-    <section class="sec">
-      <div class="sec__inner inner">
-        <h2 class="hidden">ピックアップ</h2>
-        
-        <a href="./products.html" class="sec__link more-link">View More</a>
+    <section class="product-dtl sec">
+      <div class="product-dtl__inner sec__inner inner">
+        <h2 class="sec__title">プロダクトタイトル</h2>
+        <div class="flex">
+          <img src="./img/item1.jpg" width="400" height="400" alt="" class="product-dtl__img">
+          <div class="product-dtl__right">
+            <p class="product-detail__desc">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <p class="product-dtl__desc">
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <span class="product-dtl__price">&yen;99,999 +tax</span>
+            <dl>
+              <div>
+                <dt>Size:</dt>
+                <dd>W999 × D999 × H999</dd>
+              </div>
+              <div>
+                <dt>Color:</dt>
+                <dd>テキスト</dd>
+              </div>
+              <div>
+                <dt>Material:</dt>
+                <dd>テキストテキストテキスト</dd>
+              </div>
+            </dl>
+          </div>
+          <a href="./products.html" class="sec__link more-link">Back To Products</a>
+        </div>
       </div><!-- /.sec__inner -->
     </section>
   </main>
