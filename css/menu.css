@@ -43,6 +43,7 @@
   /* ラインカラー */
   --line-black: #000;
   --line-white: #fff;
+  --line-gray: #dcdbdb;
 
   /* 背景色 */
   --bg-main: #e6e2d7;
@@ -54,18 +55,54 @@
   --btn-color: #4b4b4b;
 }
 
-
 /* ============================
 * About
 * ========================= */
-.sec__desc-wrapper {
+.sec__content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   max-width: 600px;
+}
+
+.about .sec__content-wrapper {
+  gap: 30px;
 }
 
 .sec__desc {
   font-size: var(--font-14);
   line-height: 1.5;
+}
+
+/* ============================
+* Company
+* ========================= */
+.company__inner {
+  padding-bottom: 160px;
+}
+
+.company .sec__content-wrapper {
+  gap: 20px;
+}
+
+.company__item {
+  display: flex;
+  font-size: var(--font-14);
+  line-height: 1.5;
+  padding: 20px 10px;
+}
+
+.company__item:not(:last-of-type) {
+  border-bottom: 1px solid var(--line-gray);
+}
+
+.company__item .item__term {
+  width: 32%;
+}
+
+.company__item .item__desc {
+  width: 68%;
+}
+
+.company__map iframe {
+  filter: grayscale(100%);
 }
