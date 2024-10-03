@@ -64,6 +64,8 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   font-optical-sizing: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -246,6 +248,10 @@ img {
 /* ============================
 *  main
 * ========================= */
+.main {
+  flex: 1;
+}
+
 .sec__inner {
   margin-bottom: 121px;
 }
@@ -295,15 +301,10 @@ img {
 * ========================= */
 .footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 0;
   right: 0;
-}
-
-@media screen and (max-width: 900px) {
-  .footer {
-    bottom: 0;
-  }
+  padding-bottom: 20px;
 }
 
 .footer__inner {
